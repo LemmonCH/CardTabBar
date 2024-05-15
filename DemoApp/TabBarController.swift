@@ -14,16 +14,16 @@ final class TabBarController: CardTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewController()
-        setupUI()
+//        setupUI()
     }
 
     // MARK: - UI
-    private func setupUI() {
-        tabBar.tintColor = .TabBar.title
-        tabBar.backgroundColor = .background
-        tabBar.barTintColor = .Navigation.background
-        tabBar.indicatorColor = .TabBar.itemBackground
-    }
+//    private func setupUI() {
+//        tabBar.tintColor = .TabBar.title
+//        tabBar.backgroundColor = .background
+//        tabBar.barTintColor = .Navigation.background
+//        tabBar.indicatorColor = .TabBar.itemBackground
+//    }
     
     private func setupViewController() {
         viewControllers = [homeTab, bookTab, editTab, notificationTab, moreTab]
