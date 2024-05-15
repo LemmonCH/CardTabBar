@@ -130,7 +130,11 @@ class CardTabBarView: UITabBar {
 
     private func addButton(with item: UITabBarItem, tag: Int) {
         let buttonView = BarItemView(item: item)
-        buttonView.tintColor = barItemColor
+        
+        buttonView.tintColor = .white
+        buttonView.backgroundColor = .black
+        buttonView.button.backgroundColor = .white
+        
         buttonView.button.tag = tag
         buttonView.button.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
 
