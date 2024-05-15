@@ -133,15 +133,16 @@ class CardTabBarView: UITabBar {
         
         buttonView.tintColor = .white
         buttonView.backgroundColor = .black
-        buttonView.button.backgroundColor = .white
         
         buttonView.button.tag = tag
         buttonView.button.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
 
         if selectedItem != nil && item === selectedItem {
             buttonView.isSelected = true
+            buttonView.button.backgroundColor = .white
         } else {
             buttonView.isSelected = false
+            buttonView.button.backgroundColor = UIColor.init(red: 243, green: 243, blue: 243, alpha: 1)
         }
 
         stackView.addArrangedSubview(buttonView)

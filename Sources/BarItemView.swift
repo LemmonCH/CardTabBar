@@ -34,6 +34,7 @@ class BarItemView: UIView {
             indicatorView.alpha = isSelected ? 1 : 0
             widthConstraint?.constant = isSelected ? Options.maxWidth : Options.minWidth
             
+            labelTitle.textAlignment = .center
             labelTitle.alpha = isSelected ? 1 : 0
             titleLeadingConstraint?.isActive = isSelected
             button.isSelected = isSelected
