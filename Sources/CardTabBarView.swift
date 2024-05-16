@@ -142,6 +142,8 @@ class CardTabBarView: UITabBar {
             buttonView.isSelected = true
         } else {
             buttonView.isSelected = false
+            
+            buttonView.button.backgroundColor = .init(red: 243/255, green: 243/255, blue: 243/255, alpha: 1)
         }
 
         stackView.addArrangedSubview(buttonView)
